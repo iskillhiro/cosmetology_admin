@@ -1,0 +1,69 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	background-color: #f9f9f9;
+
+	&__title {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+		color: #333;
+	}
+
+	&__statistic {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+.statistic__card {
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	width: 90vw;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.statistic__icon {
+	font-size: 2.5rem;
+	color: #e05f79;
+	margin-bottom: 1rem;
+}
+
+.statistic__label {
+	font-size: 1.2rem;
+	color: #555;
+	margin-bottom: 0.5rem;
+}
+
+.statistic__value {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #333;
+	transition: opacity 0.3s ease;
+}
+.loading-spinner {
+	border: 4px solid #dbd1d1;
+	border-top: 4px solid #e05f79;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: spin 1s linear infinite;
+	margin: auto;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

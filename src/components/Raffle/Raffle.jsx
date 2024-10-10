@@ -27,15 +27,9 @@ export default function CreateRaffle() {
 
 	const onSubmit = async data => {
 		console.log('Форма отправлена с данными:', data)
-		const response = axiosDB.post('/raffle', data, {
+		axiosDB.post('/raffle', data, {
 			headers: { 'Content-Type': 'application/json' },
 		})
-
-		if (response.success) {
-			alert('Розыгрыш успешно создан')
-		} else {
-			alert('Ошибка создания розыгрыша')
-		}
 	}
 
 	return (

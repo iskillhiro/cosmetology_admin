@@ -18,7 +18,7 @@ const schema = yup.object().shape({
 })
 
 export default function CreateRaffle() {
-	const [raffleState, setRaffleState] = useState(2)
+	const [raffleState, setRaffleState] = useState(1)
 
 	const {
 		register,
